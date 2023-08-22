@@ -17,11 +17,10 @@ body,header, main, footer {
     margin: 0;
     padding: 0;
     background-image: url(img/9bc98f55db5737c6b9601ea215f14467\ \(1\).jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
     background-position: center;
     background-attachment: fixed;
-   
+    background-repeat: no-repeat;
+   background-size: cover;
 }
 header{
     height: 80px;
@@ -46,9 +45,8 @@ header{
 }
 
 aside {
-    display: block;
+    display: flex;
     width: 60px;
-    padding: auto;
     background-color:#090909;
     color: #fff;
     border-style: solid;
@@ -129,6 +127,21 @@ main p{
     
 }
 
+@media only screen and (min-width: 480px) and (max-width: 720){
+    .main{
+        display: flex;
+        justify-content: flex start;
+        grid-template-columns: (1,1fr);
+        grid-template-rows: (1,1fr);
+    }
+    .main h1{
+        display: flex;
+        font-size: 15px;
+        justify-content: flex start;
+    }
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -171,6 +184,8 @@ body {
     padding: 40px;
     font-size: 15px;
    height:100%;
+   background-size: cover;
+   background-repeat: no-repeat;
 
 }
 h1{
@@ -227,9 +242,31 @@ footer p{
     padding: 20px;
     font-size: 15px;
    height:100%;
+   background-size: cover;
+   background-repeat: no-repeat;
    
 
 }
+@media only screen and (min-width:300px) and (max-width: 480px){
+    .Contacto {
+        grid-template-columns: (1,1fr);
+        grid-template-rows: (1,1fr);
+        font-size: 15px;
+
+    }
+   
+}
+@media only screen and (min-width:481px) and (max-width:1024){
+.Contacto{
+    grid-template-columns: (1,1fr);
+        grid-template-rows: (1,1fr);
+        font-size: 15px;
+}
+}
+
+
+
+
 .subir{
     height: 20px;
     width: 20px;
@@ -247,11 +284,9 @@ footer p{
     margin: 0;
     padding: 0;
     background-color: #090909;
-    margin-block: 7%;
     font-size: 40px;
-    margin-bottom: 10px;
     width: 50%;
-    margin-left: 25%
+    justify-content: center;
 }
 
 h3{
@@ -261,15 +296,15 @@ h3{
 div h3{
     display: flex;
     color:white;
-    text-align: left;
+    text-align: center;
     padding: 2px;
     font-family:initial;
     font-size: 50px;
     font-weight: 200;
     border-width: 10px;
     width: 50%;
-    margin-left: 300px;
-    margin-top: 50px;
+    margin-left: 200px;
+    margin-top: 30px;
     
 
     
@@ -282,9 +317,14 @@ div h3{
 .grid-container {
    display: grid;
    
-    grid-template-columns:repeat(2,1fr);
-    grid-row:repeat(2,200px);
+    grid-template-columns:repeat(1,1fr);
+    grid-row:repeat(4,200px);
     
+}
+.main main servicios{
+    text-align: center;
+    
+
 }
 
 .item{
@@ -302,8 +342,6 @@ div h3{
   #titulo{
     text-align: center;
     text-align: justify;
-    padding-right: 300px;
-    padding-bottom: 50px;
     
   }
   
@@ -323,33 +361,55 @@ div h3{
 }
 
   .foto img {
-    max-width: 100%;
-    height: auto;
+    max-width: 350px;
+    width: 50%;
   }
  
  
    .contenedor{
     display: flex;
+    justify-content: flex-start;
     
    }
-   @media only screen and (min-width:480) and (max-width: 768){
+   .contenedor-flex a{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+   }
+   @media only screen and (min-width:480px) and (max-width: 768px){
     .grid-container{
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(2,200px);
+        grid-template-rows: repeat(1,1fr);
     }
+    .div h3{
+        justify-content: center!important;
+        
     }
-    @media only screen and (min-width:768) and (max-width:1024){
-        .grid-container{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(2,200px);
+    .foto{
+        margin-left: 300px;
     }
 }
-    @media only screen and (min-width:1024) and (max-width:2000){
+    @media only screen and (min-width:769px) and (max-width:1024px){
         .grid-container{
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,200px);
+        grid-template-rows: repeat(2,1fr);
+        }
+        .div h3{
+            justify-content: center!important;
+            
+        }
+        .foto{
+            margin-left: 300px;
+        }
     }
-}
+    
+    @media only screen and (min-width:1025px) and (max-width:2000px){
+        .grid-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    }
+
    div img{
     width: 350px;
     height: auto;
