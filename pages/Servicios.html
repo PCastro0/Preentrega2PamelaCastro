@@ -3,44 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Servicios</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../estilos.css">
 </head>
 <body>
-<header>
-    <aside class="logo">
-        MP
-    </aside>
-    <nav>
-        <ul>
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="Contacto.html">CONTACTO</a></li>
-            <li><a href="Nosotros.html">NOSOTROS</a></li>
-            <li><a href="#">SERVICIOS</a></li>
-            <li><a href="Turnos.html">TURNOS</a></li>
-        </ul>
-    </nav>
-</header>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <aside class="logo">
+                MP
+            </aside>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Turnos.html">TURNOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <main class="main main servicios">
         <h2>SERVICIOS MI PELUQUERÍA</h2>
         <div class="grid-container"> 
             <div class="item texto">    
-                <h3 id="corte"><strong>CORTE</strong></h3>
+                <h3 id="titulo"><strong>CORTE</strong></h3>
                 
         <P>Tijeras, máquinas, varios filos, precisión, técnica y sobre todo un estilo único hacen fundamental el Corte. <br>¡Nuestro equipo de profesionales podrá asesorarte y hacer lucir tu pelo con el look ideal! <br> El pelo es el accesorio más importante que tenemos.
         </P></div>
 
         <div class="item foto">
-        <img src="../img/corte.jpg" alt="corte"></div>
-        <div class="texto2">
+        <img src="../img/corte.jpg" alt="corte" style="max-width: 100%;height: auto;"></div>
+        <div class="item texto2">
 
-        <h3 id="coloracion"><strong>COLORACIÓN</strong></h3>
+        <h3 id="titulo"><strong>COLOR</strong></h3>
      
         <p>Te asesoramos de una manera minuciosa para poder aconsejarte sobre qué es lo que tu cabello necesita. Cuáles son los pasos que llevara tu pelo para llegar al objetivo que deseas. Nuestra misión fundamental es mantener tu pelo sano y que luzca intacto, garantizamos tu felicidad absoluta.</p>
           </div>
-          <div class="foto2">
-            <img src="../img/tintura.jpg">
+          <div class="item foto">
+            <img src="../img/tintura.jpg" alt="color" style="max-width: 100%;height: auto;">
        
         </div>
       
@@ -57,6 +73,6 @@
     
         <a href="#" class="subir"><i class="fa-solid fa-sort-up"></i></a>
         
-    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>   
 </body>
 </html>
