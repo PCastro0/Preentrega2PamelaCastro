@@ -55,7 +55,7 @@ nav{
 }
 
 .nav-link:hover{
-    color: rgb(251, 234, 0) !important;
+    color: rgb(241, 4, 119) !important;
 }
 
 /*navbar*/
@@ -89,7 +89,7 @@ main{
     
     
 }
-
+/*home foto y titulo*/
 main h1{
     display: flex;
     color:rgb(241, 4, 119);
@@ -109,6 +109,13 @@ main h1{
     background-image: url(img/salon1.jpg);
    
 }
+@media screen and (min-width: 360px) and (max-width: 720px){
+    main h1{
+        font-size: 50px !important;
+        padding-top: 60px !important;
+    }
+}
+/*finaliza home foto y titulo*/
 
 main h2{
     display: flex;
@@ -170,7 +177,7 @@ body {
     margin-bottom:10px ;
     width: 50%;
     margin-left: 25%
-
+    
 }
 
 .Contacto footer{
@@ -329,9 +336,9 @@ hr{
     background-position: center;
     background-size: cover;
 }
-
-   .Nosotros img {
-    
+/*imagen en nosotros*/
+   .main main Nosotros {
+    display: flex;
     width: auto;
     height: 500px;
     margin-right: 300px;
@@ -339,32 +346,64 @@ hr{
     margin-bottom: 50px;
     margin-left: 400px;
     border: 20px solid;
-   
+    background-image: url(img/equipo.jpg);
+    background-position: center;
+    background-size: cover;
    }
+   @media screen and (min-width: 360px) and (max-width: 720px){
+    .main Nosotros{
+        grid-template-columns: (1,1fr);
+        grid-template-rows: (1,fr);
+        background-position: center !important;
+        
+    }
+   }
+/*finaliza imagen en nosotros*/
 
+/*formulario turnos*/
    .container1 {
     max-width: 500px;
     margin: 10px auto;
     background-color: black;
     padding: 20px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 3px white;
   }
 .label,input,select,textarea,button {
 display: block;
 width: 300px;
-margin-bottom: 10px;
+margin-bottom: 20px;
 text-align: left;
-color: #fff;
+color:rgb(241, 4, 119) ;
 margin-left: 70px;
+padding: 10px;
 }
-
-.container1 h1{
-    margin-bottom: 40px;
+/*formulario turnos*/
+/* inicia titulo solicitud turno*/
+.tituloturnos{
+    display: flex;
+    color: #fff;
+    background-color: black;
+    margin-block: auto;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom:10px ;
+    width: 500px;
+    margin-left: 520px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-style:normal;
+    justify-content: center;
+    box-shadow: 0 0 3px white;
+    /*margin-bottom: 40px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     font-style: normal;
+    background-color: #090909;*/
 }
-   
+ /*finaliza titulo solicitud turno*/ 
+ 
+ /*inicio formulario turno*/
 #servicio{
     color: #090909;
     
@@ -375,7 +414,9 @@ margin-left: 70px;
 #hora{
     color: #090909;
 }
-
+.nombre {
+    color: #fff;
+}
 
 button {
     display: block;
@@ -397,7 +438,23 @@ button {
      
     background-color:rgb(241, 4, 119);
     }
-    
+    @media screen and (min-width: 360px) and (max-width: 720px){
+      .container1 {
+        grid-template-columns: (1,1fr);
+        display: flex;
+        font-size: 15px;
+        text-align: left;
+        justify-content: left !important;
+         
+      } 
+      .label,input,select,textarea,button{
+    display: flex !important;
+    margin-left: 15px;
+      } 
+         
+    }
+    /*finaliza turnos*/
+
     @media only screen and (min-width:300px) and (max-width: 480px){
         .Contacto {
             grid-template-columns: (1,1fr);
@@ -405,6 +462,7 @@ button {
             font-size: 15px;
     
         }
+
        
     }
     @media only screen and (max-width:480px){
