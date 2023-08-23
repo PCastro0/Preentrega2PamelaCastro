@@ -500,7 +500,7 @@ button {
                 margin-left: 300px;
             }
         }
-        @media only screen and (max-width: 720){
+        /*@media only screen and (max-width: 720){
             .main{
                 grid-template-columns: (1,1fr);
                 grid-template-rows: (1,1fr);
@@ -510,7 +510,7 @@ button {
                 font-size: 15px;
                 justify-content: flex start;
             }
-        }
+        }*/
     
     
     
