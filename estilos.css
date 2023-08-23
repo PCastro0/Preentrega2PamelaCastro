@@ -32,17 +32,33 @@ header{
     
 }
 
+/*navbar*/
+.navbar-brand{
+    color: white !important;
+}
+nav{
+    font-size: 15PX;
+    font-family: serif;
+    
+}
 .navbar{
-    height: 120px;
+    background-color:black !important;
+}
+.nav-link{
+    color: white !important;
+}
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.nav-link{
-    color: #fff !important;
-    font-family: serif;
-   font-size: 15px;
-   font-weight: bolder;
-    font-style: normal;
+.nav-link:hover{
+    color: rgb(251, 234, 0) !important;
 }
+
+/*navbar*/
 
 aside {
     display: flex;
@@ -249,6 +265,7 @@ footer p{
     color: rgb(241, 4, 119);
     box-shadow: 0 0 5px rgb(241, 4, 119);
 }
+
 #tratamientos{
     height: 100%;
     background-color: rgba(0, 255, 255, 0);
@@ -259,17 +276,14 @@ footer p{
    
 }
 .card{
-    
     width: 400px;
     background-color: black;
     text-align: center;
     border: 3px solid black;
     margin: 40px;
-    
-    
 }
 .card-img.img-uno{
-    display: flex;
+    
     height: 200px;
     width: 100%;
     background-image: url(img/corte.jpg);
@@ -286,7 +300,7 @@ hr{
     color: white;
 }
 .card p{
-    display: flex;
+    
     color:white (0, 0, 0);
     padding-top: 10px;
     padding-bottom: 10px; 
@@ -300,7 +314,7 @@ hr{
     
 }
 .card-img.img-dos{
-    display: flex;
+    
     height: 200px;
     width: 100%;
     background-image: url(img/tintura.jpg);
@@ -308,6 +322,7 @@ hr{
     background-size: cover;
 }
 .card-img.img-tres{
+    
     height: 200px;
     width: 100%;
     background-image: url(img/peinado.jpg);
