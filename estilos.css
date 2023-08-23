@@ -121,27 +121,7 @@ main p{
     border-width: 10px;
     width: 50%;
     margin-left: 25%;
-    
-    
-    
-    
 }
-
-@media only screen and (min-width: 480px) and (max-width: 720){
-    .main{
-        display: flex;
-        justify-content: flex start;
-        grid-template-columns: (1,1fr);
-        grid-template-rows: (1,1fr);
-    }
-    .main h1{
-        display: flex;
-        font-size: 15px;
-        justify-content: flex start;
-    }
-}
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -150,13 +130,12 @@ body {
 .form{
     position: absolute;
 }
-.Contacto formulario {
-
-    
+.Contacto formulario {   
     font-size: 20px;
     width: 50%;
     margin-left: 300px;
-    padding: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
     border: 1px solid #cccccca0;
     border-radius: 5px;
     background-color: black;
@@ -168,10 +147,11 @@ body {
 }
 
 .Contacto h2{
+    display: flex;
     background-color: #090909;
-    margin-block: 7%;
-    font-size: 40px;
-    margin-bottom: 10px;
+    margin-block: auto;
+    font-size: 20px;
+    margin-bottom:10px ;
     width: 50%;
     margin-left: 25%
 
@@ -179,7 +159,7 @@ body {
 
 .Contacto footer{
     background-color: #090909;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 40px;
     font-size: 15px;
@@ -190,13 +170,14 @@ body {
 }
 h1{
     text-align: center;
-    color: #fff;
+    color: #fcf9f9;
 }
 
 .formulario input{
     margin-left: 25%;
     width: 50%;
-    padding: 20px;
+    padding: 16px;
+    margin-bottom: 10px;
 }
 
 .formulario textarea{
@@ -207,14 +188,20 @@ h1{
     
     
 }
+.imput number{
+    margin-left: 25%;
+    width: 50%;
+    padding: 16px;
+    margin-bottom: 10px;
+}
 
 .formulario button {
     display: block;
     font-weight: bold;
     width: 50%;
-    padding: 10px;
+    padding: 16px;
     background-color: #090909;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -247,24 +234,6 @@ footer p{
    
 
 }
-@media only screen and (min-width:300px) and (max-width: 480px){
-    .Contacto {
-        grid-template-columns: (1,1fr);
-        grid-template-rows: (1,1fr);
-        font-size: 15px;
-
-    }
-   
-}
-@media only screen and (min-width:481px) and (max-width:1024){
-.Contacto{
-    grid-template-columns: (1,1fr);
-        grid-template-rows: (1,1fr);
-        font-size: 15px;
-}
-}
-
-
 
 
 .subir{
@@ -280,7 +249,68 @@ footer p{
     color: rgb(241, 4, 119);
     box-shadow: 0 0 5px rgb(241, 4, 119);
 }
-.Servicios h2{
+#tratamientos{
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+.card{
+    
+    width: 400px;
+    background-color: black;
+    text-align: center;
+    border: 3px solid black;
+    margin: 40px;
+    
+}
+.card-img.img-uno{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    background-image: url(img/corte.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card h5{
+    font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.card p{
+    display: flex;
+    color:white (0, 0, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.card a{
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 30px;
+    
+}
+.card-img.img-dos{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    background-image: url(img/tintura.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-img.img-tres{
+    height: 200px;
+    width: 100%;
+    background-image: url(img/peinado.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/*.Servicios h2{
     margin: 0;
     padding: 0;
     background-color: #090909;
@@ -309,11 +339,6 @@ div h3{
 
     
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 .grid-container {
    display: grid;
    
@@ -321,11 +346,7 @@ div h3{
     grid-row:repeat(4,200px);
     
 }
-.main main servicios{
-    text-align: center;
-    
 
-}
 
 .item{
     background-size: cover;
@@ -376,39 +397,6 @@ div h3{
     display: flex;
     justify-content: flex-start;
    }
-   @media only screen and (min-width:480px) and (max-width: 768px){
-    .grid-container{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(1,1fr);
-    }
-    .div h3{
-        justify-content: center!important;
-        
-    }
-    .foto{
-        margin-left: 300px;
-    }
-}
-    @media only screen and (min-width:769px) and (max-width:1024px){
-        .grid-container{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-        }
-        .div h3{
-            justify-content: center!important;
-            
-        }
-        .foto{
-            margin-left: 300px;
-        }
-    }
-    
-    @media only screen and (min-width:1025px) and (max-width:2000px){
-        .grid-container{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-    }
-    }
 
    div img{
     width: 350px;
@@ -418,7 +406,7 @@ div h3{
     margin-bottom: 50px;
     margin-left: 10px;
    
-   }
+   }*/
 
    .Nosotros img {
     
@@ -439,7 +427,7 @@ div h3{
     padding: 20px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   }
-label,input,select,textarea,button {
+.label,input,select,textarea,button {
 display: block;
 width: 300px;
 margin-bottom: 10px;
@@ -485,10 +473,64 @@ button {
     button:hover {
       
      
-    background-color: #45a049;
+    background-color:rgb(241, 4, 119);
     }
     
+    @media only screen and (min-width:300px) and (max-width: 480px){
+        .Contacto {
+            grid-template-columns: (1,1fr);
+            grid-template-rows: (1,1fr);
+            font-size: 15px;
     
+        }
+       
+    }
+    @media only screen and (max-width:480px){
+    .Contacto{
+        grid-template-columns: (1,1fr);
+        display: flex;
+        font-size: 15px;
+        justify-content: center;
+            
+    }
+    }
+    @media only screen and (max-width: 768px){
+        .grid-container{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,1fr);
+        }
+        .div h3{
+            justify-content: center!important;
+            
+        }
+        .foto{
+            margin-left: 300px;
+        }
+    }
+        @media only screen and (max-width:1024px){
+            .grid-container{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            }
+            .div h3{
+                justify-content: center!important;
+                
+            }
+            .foto{
+                margin-left: 300px;
+            }
+        }
+        @media only screen and (max-width: 720){
+            .main{
+                grid-template-columns: (1,1fr);
+                grid-template-rows: (1,1fr);
+            }
+            .main h1{
+                display: flex;
+                font-size: 15px;
+                justify-content: flex start;
+            }
+        }
     
     
     
