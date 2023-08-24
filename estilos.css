@@ -150,6 +150,7 @@ body {
     margin: 0;
     padding: 0;
 }
+/*inicia formulario contacto*/
 .form{
     position: absolute;
 }
@@ -166,31 +167,24 @@ body {
     font-weight: bolder;
     font-style: normal;
     
+    
 
 }
 
 .Contacto h2{
+   
     display: flex;
     background-color: #090909;
     margin-block: auto;
+    margin-top: 30px;
     font-size: 20px;
     margin-bottom:10px ;
     width: 50%;
     margin-left: 25%
     
+    
 }
 
-.Contacto footer{
-    background-color: #090909;
-    color: #ffffff;
-    text-align: center;
-    padding: 40px;
-    font-size: 15px;
-   height:100%;
-   background-size: cover;
-   background-repeat: no-repeat;
-
-}
 h1{
     text-align: center;
     color: #fcf9f9;
@@ -234,7 +228,33 @@ h1{
     
 
 }
+/*inicia las medias queries de formularios*/
+@media screen and (min-width: 360px) and (max-width: 720px){
+    .Contacto h2 {
+    margin-left:0 !important;
+    width: 380px !important;
+    justify-content: center !important;
+    margin-top: 20px;
+    }
+    .formulario textarea{
+        margin-left: 0;
+        width: 380px !important;
+        justify-content: left !important;
+        margin-top: 20px;
+        
+    }
+    .formulario input{
+        margin-left: 0;
+        width: 380px !important;
+        justify-content: left !important;
+        margin-top: 20px;
+        
+    }
+}
+/*finaliza las medias queries de formularios*/
+/*finaliza formulario contacto*/
 
+/*incia el footer*/
 .redes{
     color: white;
     font-size: 20px;
@@ -243,6 +263,7 @@ h1{
     background-color: #090909;
     height: auto;
     width: 100%;
+    margin-top: 0;
 }
 
 footer p{
@@ -251,10 +272,10 @@ footer p{
     text-align: center;
     padding: 20px;
     font-size: 15px;
-   height:100%;
+   height:auto;
    background-size: cover;
    background-repeat: no-repeat;
-   
+   margin-bottom: 0;
 
 }
 
@@ -272,7 +293,7 @@ footer p{
     color: rgb(241, 4, 119);
     box-shadow: 0 0 5px rgb(241, 4, 119);
 }
-
+/*finaliza footer*/
 #tratamientos{
     height: 100%;
     background-color: rgba(0, 255, 255, 0);
@@ -395,15 +416,9 @@ padding: 10px;
     font-style:normal;
     justify-content: center;
     box-shadow: 0 0 3px white;
-    /*margin-bottom: 40px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
-    font-style: normal;
-    background-color: #090909;*/
 }
  /*finaliza titulo solicitud turno*/ 
  
- /*inicio formulario turno*/
 #servicio{
     color: #090909;
     
@@ -444,28 +459,28 @@ button {
         display: flex;
         font-size: 15px;
         text-align: left;
-        justify-content: left !important;
+        justify-content: center !important;
          
       } 
       .label,input,select,textarea,button{
     display: flex !important;
     margin-left: 15px;
+    
+      }
+      .tituloturnos{
+        grid-template-columns: (1,1fr);
+        display: flex;
+        margin-left:0 !important;
+        width: 380px !important;
+        justify-content: center !important;
       } 
          
     }
-    /*finaliza turnos*/
-
-    @media only screen and (min-width:300px) and (max-width: 480px){
-        .Contacto {
-            grid-template-columns: (1,1fr);
-            grid-template-rows: (1,1fr);
-            font-size: 15px;
     
-        }
+    /*inicio formulario turno*/
+/*inicia medias contacto*/
 
-       
-    }
-    @media only screen and (max-width:480px){
+   /* @media only screen and (max-width:480px){
     .Contacto{
         grid-template-columns: (1,1fr);
         display: flex;
@@ -473,7 +488,8 @@ button {
         justify-content: center;
             
     }
-    }
+    /*finaliza medias contacto*/
+    
     @media only screen and (max-width: 768px){
         .grid-container{
             grid-template-columns: repeat(1,1fr);
