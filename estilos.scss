@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*variables*/
+$color1: rgb(241, 4, 119);
+
+body{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+body,header, main, footer {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/9bc98f55db5737c6b9601ea215f14467\ \(1\).jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*navbar*/
+header .navbar{
+    background-color: black !important;
+}
+
+.nav-item{
+    a {
+        text-decoration: none;
+        color: white;
+        position: relative;
+        font-size: 15PX;
+        font-family: serif;
+}
+.nav-link:hover{
+    color: $color1 !important;
+}
+.nav-link{
+    color: white !important;
+}
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: end;
+    color: white;
+}
+aside {
+    display: flex;
+    width: 60px;
+    background-color:#090909;
+    color: #fff;
+    border-style: solid;
+    border-color: #fff;
+    cursor: pointer;
+    font-family: serif;
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5px;    
+}
+
+main{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    
+    
+}
+/*FINALIZA EL NAVBAR*/
+/*home foto y titulo*/
+main h1{
+    display: flex;
+    color:$color1;
+    border-width: 10px;
+    font-size: 800% ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    height: 500px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-color: #090909;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(img/salon1.jpg);
+
+}
+@media screen and (min-width: 360px) and (max-width: 720px){
+    main h1{
+        font-size: 50px !important;
+        padding-top: 60px !important;
+    }
+}
+/*finaliza home foto y titulo*/
+
+main h2{
+    display: flex;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 70px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    
+}
+main p{
+    display: flex;
+    color:white;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding: 2px;
+    font-family:initial;
+    margin-bottom: 80px;
+    font-size: 25px;
+    font-weight: 200;
+    border-width: 10px;
+    width: 50%;
+    margin-left: 25%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*inicia formulario contacto*/
+.form{
+    position: absolute;
+}
+.Contacto formulario {   
+    font-size: 20px;
+    width: 50%;
+    margin-left: 300px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid #cccccca0;
+    border-radius: 5px;
+    background-color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    
+    
+
+}
+
+.Contacto h2{
+
+    display: flex;
+    background-color: #090909;
+    margin-block: auto;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom:10px ;
+    width: 50%;
+    margin-left: 25%
+    
+    
+}
+
+h1{
+    text-align: center;
+    color: #fcf9f9;
+}
+
+.formulario input{
+    margin-left: 25%;
+    width: 50%;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+.formulario textarea{
+    margin-left: 25%;
+    width: 50%;
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+.imput number{
+    margin-left: 25%;
+    width: 50%;
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+.formulario button {
+    display: block;
+    font-weight: bold;
+    width: 50%;
+    padding: 16px;
+    background-color: #090909;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-bottom: 10%;
+    margin-top: 10px;
+    
+
+}
+/*inicia las medias queries de formularios*/
+@media screen and (min-width: 360px) and (max-width: 720px){
+    .Contacto h2 {
+    margin-left:0 !important;
+    width: 380px !important;
+    justify-content: center !important;
+    margin-top: 20px;
+    }
+    .formulario textarea{
+        margin-left: 0;
+        width: 380px !important;
+        justify-content: left !important;
+        margin-top: 20px;
+        
+    }
+    .formulario input{
+        margin-left: 0;
+        width: 380px !important;
+        justify-content: left !important;
+        margin-top: 20px;
+        
+    }
+}
+/*finaliza las medias queries de formularios*/
+/*finaliza formulario contacto*/
+
+/*incia el footer*/
+.redes{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #090909;
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+}
+
+footer p{
+    background-color: #090909;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    height:auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+
+}
+
+
+.subir{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    color: $color1;
+    box-shadow: 0 0 5px $color1;
+}
+/*finaliza footer*/
+#tratamientos{
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.card{
+    width: 400px;
+    background-color: black;
+    text-align: center;
+    border: 3px solid black;
+    margin: 40px;
+    
+}
+.card-img.img-uno{
+    
+    height: 200px;
+    width: 100%;
+    background-image: url(img/corte.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card h5{
+    font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+hr{
+    color: white;
+}
+.card p{
+    
+    color:white (0, 0, 0);
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    align-items: baseline;
+}
+.card a{
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 30px;
+    
+}
+.card-img.img-dos{
+    
+    height: 200px;
+    width: 100%;
+    background-image: url(img/tintura.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-img.img-tres{
+    
+    height: 200px;
+    width: 100%;
+    background-image: url(img/peinado.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/*imagen en nosotros*/
+.sect-uno-index {
+    .contenedor-img-grupo{
+        background-image: url(img/equipo.jpg);
+        height: 300px;
+        margin-left:  10%;
+        border: 2px solid black;
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 720px){
+    .main Nosotros{
+        grid-template-columns: (1,1fr);
+        grid-template-rows: (1,fr);
+        background-position: center !important;
+        
+    }
+    .contenedor-img-grupo{
+        grid-template-columns: (1,1fr);
+        grid-template-rows: (1,fr);
+        background-position: center !important;
+    }
+}
+/*finaliza imagen en nosotros*/
+
+/*formulario turnos*/
+.container1 {
+    max-width: 500px;
+    margin: 10px auto;
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0 0 3px white;
+}
+.label,input,select,textarea,button {
+display: block;
+width: 300px;
+margin-bottom: 20px;
+text-align: left;
+color:$color1 ;
+margin-left: 70px;
+padding: 10px;
+}
+/*formulario turnos*/
+/* inicia titulo solicitud turno*/
+.tituloturnos{
+    display: flex;
+    color: #fff;
+    background-color: black;
+    margin-block: auto;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom:10px ;
+    width: 500px;
+    margin-left: 520px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-style:normal;
+    justify-content: center;
+    box-shadow: 0 0 3px white;
+}
+/*finaliza titulo solicitud turno*/ 
+
+#servicio{
+    color: #090909;
+    
+}
+#fecha{
+    color: #090909;
+}
+#hora{
+    color: #090909;
+}
+.nombre {
+    color: #fff;
+}
+
+button {
+    display: block;
+    font-weight: bold;
+    width: 50%;
+    padding: 10px;
+    background-color: #090909;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-bottom: 10%;
+    margin-top: 10px;
+    }
+    
+    button:hover {
+    background-color:$color1;
+    }
+    @media screen and (min-width: 360px) and (max-width: 720px){
+    .container1 {
+        grid-template-columns: (1,1fr);
+        display: flex;
+        font-size: 15px;
+        text-align: left;
+        justify-content: center !important;
+    } 
+    .label,input,select,textarea,button{
+    display: flex !important;
+    margin-left: 15px;
+    
+    }
+    .tituloturnos{
+        grid-template-columns: (1,1fr);
+        display: flex;
+        margin-left:0 !important;
+        width: 380px !important;
+        justify-content: center !important;
+    } 
+        
+    }
+    
+    /*inicio formulario turno*/
+/*inicia medias contacto*/
+
+/* @media only screen and (max-width:480px){
+    .Contacto{
+        grid-template-columns: (1,1fr);
+        display: flex;
+        font-size: 15px;
+        justify-content: center;
+            
+    }
+    /*finaliza medias contacto*/
+    
+    @media only screen and (max-width: 768px){
+        .grid-container{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(1,1fr);
+        }
+        .div h3{
+            justify-content: center!important;
+            
+        }
+        .foto{
+            margin-left: 300px;
+        }
+    }
+        @media only screen and (max-width:1024px){
+            .grid-container{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            }
+            .div h3{
+                justify-content: center!important;
+                
+            }
+            .foto{
+                margin-left: 300px;
+            }
+        }
