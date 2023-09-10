@@ -6,6 +6,9 @@
 
 /*variables*/
 $color1: rgb(241, 4, 119);
+$color2:black;
+$color3:#090909;
+
 
 body{
     margin: 0;
@@ -27,7 +30,7 @@ body,header, main, footer {
 
 /*navbar*/
 header .navbar{
-    background-color: black !important;
+    background-color: $color2!important;
 }
 
 .nav-item{
@@ -54,7 +57,7 @@ header .navbar{
 aside {
     display: flex;
     width: 60px;
-    background-color:#090909;
+    background-color:$color3;
     color: #fff;
     border-style: solid;
     border-color: #fff;
@@ -92,7 +95,7 @@ main h1{
     width: auto;
     background-size: cover;
     background-position: center;
-    background-color: #090909;
+    background-color: $color3;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -121,7 +124,7 @@ main h2{
     text-align: center;
     animation-duration: 3s;
     animation-name: aparecer;
-    animation-delay: 3s;
+    animation-delay: 0.5s;
     animation-direction:normal;
     animation-iteration-count:initial;
     
@@ -166,7 +169,7 @@ body {
     padding: 20px;
     border: 1px solid #cccccca0;
     border-radius: 5px;
-    background-color: black;
+    background-color: $color2;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     font-style: normal;
@@ -178,7 +181,7 @@ body {
 .Contacto h2{
 
     display: flex;
-    background-color: #090909;
+    background-color: $color3;
     margin-block: auto;
     margin-top: 30px;
     font-size: 20px;
@@ -221,7 +224,7 @@ h1{
     font-weight: bold;
     width: 50%;
     padding: 16px;
-    background-color: #090909;
+    background-color: $color3;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -264,14 +267,14 @@ h1{
     font-size: 20px;
     text-align: center;
     padding: 10px;
-    background-color: #090909;
+    background-color: $color3;
     height: auto;
     width: 100%;
     margin-top: 0;
 }
 
 footer p{
-    background-color: #090909;
+    background-color: $color3;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -309,9 +312,9 @@ footer p{
 }
 .card{
     width: 400px;
-    background-color: black;
+    background-color: $color2;
     text-align: center;
-    border: 3px solid black;
+    border: 3px solid $color2;
     margin: 40px;
     
 }
@@ -340,7 +343,7 @@ hr{
     align-items: baseline;
 }
 .card a{
-    background-color: black;
+    background-color: $color2;
     text-decoration: none;
     padding: 10px 20px;
     color: white;
@@ -369,7 +372,7 @@ hr{
         background-image: url(img/equipo.jpg);
         height: 300px;
         margin-left:  10%;
-        border: 2px solid black;
+        border: 2px solid $color2;
         background-position: center;
         background-repeat: none;
         background-size: cover;
@@ -394,7 +397,7 @@ hr{
 .container1 {
     max-width: 500px;
     margin: 10px auto;
-    background-color: black;
+    background-color: $color2;
     padding: 20px;
     box-shadow: 0 0 3px white;
 }
@@ -412,7 +415,7 @@ padding: 10px;
 .tituloturnos{
     display: flex;
     color: #fff;
-    background-color: black;
+    background-color: $color2;
     margin-block: auto;
     font-size: 20px;
     padding: 20px;
@@ -429,14 +432,14 @@ padding: 10px;
 /*finaliza titulo solicitud turno*/ 
 
 #servicio{
-    color: #090909;
+    color: $color3;
     
 }
 #fecha{
-    color: #090909;
+    color: $color3;
 }
 #hora{
-    color: #090909;
+    color: $color3;
 }
 .nombre {
     color: #fff;
@@ -447,7 +450,7 @@ button {
     font-weight: bold;
     width: 50%;
     padding: 10px;
-    background-color: #090909;
+    background-color: $color3;
     color: #fff;
     border: none;
     border-radius: 5px;

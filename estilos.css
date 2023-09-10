@@ -116,7 +116,7 @@ main h2 {
   text-align: center;
   animation-duration: 3s;
   animation-name: aparecer;
-  animation-delay: 3s;
+  animation-delay: 0.5s;
   animation-direction: normal;
   animation-iteration-count: initial;
 }
